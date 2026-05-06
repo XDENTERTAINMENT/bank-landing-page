@@ -6,6 +6,9 @@
 html,body{
     overflow-x: hidden;
 }
+*{
+    outline:1px solid red
+}
 header {
   position: absolute;
   top: 0;
