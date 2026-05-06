@@ -6,9 +6,7 @@
 html,body{
     overflow-x: hidden;
 }
-*{
-    outline:1px solid red
-}
+
 header {
   position: absolute;
   top: 0;
@@ -90,6 +88,7 @@ li a {
   position: relative;
   height: 40vh;
   align-self: center;
+
 }
 
 .hero-image img:nth-child(1) {
@@ -217,6 +216,7 @@ footer {
       html,body{
     overflow-x: hidden;
 }
+
        .hero-image img:nth-child(1) {
     width: 700px;
     height: 300px;
@@ -280,6 +280,10 @@ footer {
 html,body{
     overflow-x: hidden;
 }
+section{
+    justify-self: center;
+
+}
     .hamburger{
         display: block;
         cursor: pointer;
@@ -293,6 +297,9 @@ html,body{
     padding: 6px;
   }
 
+   a{
+    text-align: center;
+   }
   .navbar ul li {
     background-color: white;
     margin-top: 6px;
@@ -347,6 +354,7 @@ html,body{
     order: 1;
     position: relative;
     align-self: center;
+    
   }
 
   .hero-image img:nth-child(1) {
