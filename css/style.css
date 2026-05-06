@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+html,body{
     overflow-x: hidden;
 }
 header {
@@ -211,9 +211,9 @@ footer {
  
 /* tablet */
 @media (min-width: 681px) and (max-width:1024px){
-        body{
-         overflow-x: hidden;
-    }
+      html,body{
+    overflow-x: hidden;
+}
        .hero-image img:nth-child(1) {
     width: 700px;
     height: 300px;
@@ -274,9 +274,9 @@ footer {
  mobile */
 
 @media (max-width: 680px) {
-    body{
-         overflow-x: hidden;
-    }
+html,body{
+    overflow-x: hidden;
+}
     .hamburger{
         display: block;
         cursor: pointer;
@@ -429,9 +429,9 @@ footer {
 
  /* iphone 5 */
 @media(max-width:320px){
-     body{
-         overflow-x: hidden;
-    }
+  html,body{
+    overflow-x: hidden;
+}
        .hero-image img:nth-child(1) {
     width: 700px;
     height: 270px;
