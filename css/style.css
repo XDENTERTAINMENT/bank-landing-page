@@ -457,6 +457,7 @@ html,body{
     .navbar.active {
     height: 50vh;
      width: 95%;
+     text-align: center;
   }
 
     .container-footer-content{
