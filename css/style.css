@@ -282,7 +282,6 @@ footer {
   html,
   body {
     overflow-x: hidden;
-    justify-content: center;
   }
   section {
     justify-self: center;
