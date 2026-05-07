@@ -7,7 +7,9 @@ html,
 body {
   overflow-x: hidden;
 }
-
+*{
+    outline: 3px solid red;
+}
 header {
   position: absolute;
   top: 0;
@@ -279,10 +281,7 @@ footer {
  mobile */
 
 @media (max-width: 680px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
+ 
   section {
     justify-self: center;
   }
@@ -443,10 +442,7 @@ footer {
 
 /* iphone 5 */
 @media (max-width: 320px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
+
   .hero-image img:nth-child(1) {
     width: 700px;
     height: 270px;
