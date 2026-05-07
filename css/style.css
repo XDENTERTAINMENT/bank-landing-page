@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
 header {
@@ -13,6 +14,9 @@ header {
   z-index: 100;
   width: 100%;
   background-color: red;
+}
+.navbar {
+  width: 45%;
 }
 
 li {
@@ -38,6 +42,7 @@ li a {
 .navbar ul {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .container-nav {
   padding: 10px;
@@ -46,8 +51,8 @@ li a {
   justify-content: space-around;
   max-height: 10vh;
 }
-.container-nav button{
- width: 9%;
+.container-nav button {
+  width: 9%;
 }
 .btn {
   border: none;
@@ -56,8 +61,8 @@ li a {
   background-color: #62daac;
 }
 
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
 
 /* hero */
@@ -88,7 +93,6 @@ li a {
   position: relative;
   height: 40vh;
   align-self: center;
-
 }
 
 .hero-image img:nth-child(1) {
@@ -169,13 +173,11 @@ footer {
 }
 .socials {
   display: flex;
-  
 }
 
-.socials img{
-
-    width: 30%;
-    height: 50%;
+.socials img {
+  width: 20%;
+  height: 30%;
 }
 
 .footer-links {
@@ -208,16 +210,14 @@ footer {
      
  } */
 
-
-
- 
 /* tablet */
-@media (min-width: 681px) and (max-width:1024px){
-      html,body{
+@media (min-width: 681px) and (max-width: 1024px) {
+  html,
+  body {
     overflow-x: hidden;
-}
+  }
 
-       .hero-image img:nth-child(1) {
+  .hero-image img:nth-child(1) {
     width: 700px;
     height: 300px;
     position: absolute;
@@ -235,59 +235,62 @@ footer {
     z-index: 20;
   }
 
-    .container-nav button {
+  .container-nav button {
     width: 15%;
   }
- .features {
-  margin-top: 0px;
-}
-.hero-text{
+  .features {
+    margin-top: 0px;
+  }
+  .hero-text {
     width: 50%;
-}
-.hero-image{
+  }
+  .hero-image {
     width: 30%;
+  }
 
-}
-
-.hero{
+  .hero {
     height: 60vh;
-}
+  }
 
-.feature-grid{
+  .feature-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-.article-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .article-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-}
-
-
-.article{
+  .article {
     width: 100%;
     margin-top: 0px;
-}
-.feature{
+  }
+  .feature {
     margin-top: 0px;
-}
+  }
+  .container-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* 
  mobile */
 
 @media (max-width: 680px) {
-html,body{
+  html,
+  body {
     overflow-x: hidden;
-}
-section{
+    justify-content: center;
+  }
+  section {
     justify-self: center;
-
-}
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
   .container-nav {
     display: flex;
     justify-content: space-between;
@@ -297,9 +300,9 @@ section{
     padding: 6px;
   }
 
-   a{
+  a {
     text-align: center;
-   }
+  }
   .navbar ul li {
     background-color: white;
     margin-top: 6px;
@@ -354,7 +357,6 @@ section{
     order: 1;
     position: relative;
     align-self: center;
-    
   }
 
   .hero-image img:nth-child(1) {
@@ -429,21 +431,23 @@ section{
     gap: 15px;
   }
 
-  .container-footer-content{
-    display: flex;
-    flex-wrap: wrap;
-    
+  .container-footer-content {
+    display: grid;
+  justify-content: center;
+   
   }
-
-
+  .container-footer-content div{
+   justify-self: center;
+  }
 }
 
- /* iphone 5 */
-@media(max-width:320px){
-  html,body{
+/* iphone 5 */
+@media (max-width: 320px) {
+  html,
+  body {
     overflow-x: hidden;
-}
-       .hero-image img:nth-child(1) {
+  }
+  .hero-image img:nth-child(1) {
     width: 700px;
     height: 270px;
     position: absolute;
@@ -460,28 +464,23 @@ section{
     top: -110px;
     z-index: 20;
   }
-    .hero-text {
-
+  .hero-text {
     margin-top: 60px;
   }
 
-    .navbar.active {
+  .navbar.active {
     height: 50vh;
-     width: 95%;
-     text-align: center;
+    width: 95%;
+    text-align: center;
   }
 
-    .container-footer-content{
+  .container-footer-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
   }
 
-  .footer-right button{
+  .footer-right button {
     width: 80%;
   }
-
 }
-
-
