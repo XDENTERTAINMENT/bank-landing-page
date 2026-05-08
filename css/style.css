@@ -160,6 +160,9 @@ li a {
   justify-content: center;
   gap: 15px;
 }
+.container{
+  width: 100%;
+}
 .article {
   width: 24%;
   background-color: white;
@@ -432,6 +435,8 @@ footer {
   .container {
     display: grid;
     text-align: center;
+    background-color: #2d314e;
+    width: 100%;
   }
   .feature {
     width: 100%;
@@ -464,7 +469,10 @@ footer {
     justify-items: center;
     text-align: center;
   }
-
+.pic{
+  width: 100%;
+  background-color: red;
+}
   .pic img {
     height: 100%;
     width: 100%;
