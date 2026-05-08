@@ -451,6 +451,7 @@ footer {
   }
   .container{
     text-align: center;
+    background-color: #2d314e;
   }
 
   .feature-grid {
@@ -465,14 +466,10 @@ footer {
     justify-items: center;
   }
   .article {
-    width: 95%;
     height: 95%;
     justify-items: center;
     text-align: center;
   }
-.pic{
-  width: 100%;
-}
   .pic img {
     height: 100%;
     width: 100%;
