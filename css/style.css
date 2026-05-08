@@ -161,7 +161,8 @@ li a {
   gap: 15px;
 }
 .container{
-  width: 100%;
+  width: 95%;
+  justify-self: center;
 }
 .article {
   width: 24%;
@@ -436,7 +437,7 @@ footer {
     display: grid;
     text-align: center;
     background-color: #2d314e;
-    width: 100%;
+    width: 95%;
   }
   .feature {
     width: 100%;
@@ -465,13 +466,11 @@ footer {
   .article {
     width: 90%;
     height: 100%;
-    background-color: white;
     justify-items: center;
     text-align: center;
   }
 .pic{
   width: 100%;
-  background-color: red;
 }
   .pic img {
     height: 100%;
