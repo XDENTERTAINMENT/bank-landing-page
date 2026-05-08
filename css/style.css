@@ -314,6 +314,17 @@ footer {
  mobile */
 
 @media (max-width: 680px) {
+
+
+  
+.hero-image img:nth-child(1) {
+ 
+  left: 0px;
+  top: 0px;
+
+}
+
+
   .hamburger {
     display: block;
     cursor: pointer;
@@ -445,6 +456,7 @@ footer {
   }
   .features {
     margin-top: 50px;
+    width: 100%;
   }
   .container {
     text-align: center;
@@ -478,6 +490,7 @@ footer {
   }
   .articles {
     margin-top: 90px;
+    width: 100%;
   }
   .author-section {
     display: flex;
