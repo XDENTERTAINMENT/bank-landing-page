@@ -3,14 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+*{
+  outline: 4px solid red;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
-*{
-  outline: 4px solid red;
-}
+
 h1,
 h2,
 h3,
