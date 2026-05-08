@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-*{
+* {
   outline: 4px solid red;
 }
 
@@ -12,7 +12,6 @@ html,
 body {
   overflow-x: hidden;
 }
-
 
 h1,
 h2,
@@ -256,7 +255,6 @@ footer {
     overflow-x: hidden;
   }
 
-
   .hero {
     height: 350px;
   }
@@ -316,8 +314,6 @@ footer {
  mobile */
 
 @media (max-width: 680px) {
-
-
   .hamburger {
     display: block;
     cursor: pointer;
@@ -450,7 +446,7 @@ footer {
   .features {
     margin-top: 50px;
   }
-  .container{
+  .container {
     text-align: center;
   }
 
@@ -472,9 +468,9 @@ footer {
     text-align: center;
     background-color: #62daac;
   }
-.pic{
-  width: 100%;
-}
+  .pic {
+    width: 100%;
+  }
   .pic img {
     height: 100%;
     width: 100%;
