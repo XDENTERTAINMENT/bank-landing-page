@@ -318,10 +318,7 @@ footer {
 
   
 .hero-image img:nth-child(1) {
- 
-  left: 0px;
-  top: 0px;
-
+display: none;
 }
 
 
@@ -446,7 +443,6 @@ footer {
 
   .feature {
     width: 100%;
-    background-color: blue;
   }
   .feature img {
     width: 25%;
@@ -478,7 +474,6 @@ footer {
     height: 95%;
     justify-items: center;
     text-align: center;
-    background-color: #62daac;
   }
   .pic {
     width: 100%;
@@ -550,7 +545,9 @@ footer {
   .footer-right button {
     width: 80%;
   }
-
+footer{
+  width: 100%;
+}
   .hero-text button {
     width: 50%;
   }
