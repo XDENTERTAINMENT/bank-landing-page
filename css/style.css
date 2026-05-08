@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 html,
 body {
   overflow-x: hidden;
@@ -311,13 +310,9 @@ footer {
  mobile */
 
 @media (max-width: 680px) {
-
-
-  
-.hero-image img:nth-child(1) {
-display: none;
-}
-
+  .hero-image img:nth-child(1) {
+    display: none;
+  }
 
   .hamburger {
     display: block;
@@ -542,9 +537,9 @@ display: none;
   .footer-right button {
     width: 80%;
   }
-footer{
-  width: 100%;
-}
+  footer {
+    width: 100%;
+  }
   .hero-text button {
     width: 50%;
   }
