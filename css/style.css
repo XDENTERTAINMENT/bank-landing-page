@@ -7,13 +7,27 @@ html,
 body {
   overflow-x: hidden;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
 
 header {
   position: absolute;
   top: 0;
   z-index: 100;
   width: 100%;
- 
 }
 .navbar {
   width: 45%;
@@ -65,63 +79,61 @@ li a {
   display: none;
 }
 
-
 .hero-text button {
   width: 25%;
   height: 12%;
 }
-.container-hero-content{
+.container-hero-content {
   display: flex;
-  height: 90vh;
+  height: 100%;
 }
-.container-hero-content div:nth-child(1){
+.container-hero-content div:nth-child(1) {
   align-self: center;
 }
-  .hero-image img:nth-child(1){
+/* .hero-image img:nth-child(1){
     display: none;
-  }
+  } */
+.typo {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
 
-  .hero-image {
-    background: url(../assets/icons/bg-intro-mobile.svg);
-    width: 55%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size:cover;
-    overflow:hidden;
-    background-position: center;
-    height: 100vh;
-    
-  
-
-  }
-.hero{
-  height: 90vh;
-
+  align-content: center;
 }
-.hero-text{
+.hero-image {
+  width: 55%;
+  position: relative;
+  overflow: hidden;
+}
+.hero {
+  height: 600px;
+}
+.hero-text {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   width: 45%;
-  height: 50%;
-  
+  height: 60%;
+  margin: 10px;
 }
 
-/* .hero-image img:nth-child(1) {
+.hero-image img:nth-child(1) {
   position: absolute;
-  right: -500px;
-  top: -350px;
+  left: 95px;
+  top: -90px;
   z-index: 10;
-  display: none;
-} */
+  object-fit: cover;
+  width: 100%;
+  justify-self: center;
+}
 .hero-image img:nth-child(2) {
   position: absolute;
-  top: -100px;
+  top: -120px;
   left: 250px;
   z-index: 20;
 
   width: 80%;
-  
+  object-fit: cover;
 }
 
 /* features */
@@ -134,7 +146,8 @@ li a {
   gap: 15px;
 }
 .features {
-  margin-top: 150px;
+  justify-self: center;
+  width: 95%;
 }
 .feature-grid {
   display: flex;
@@ -169,6 +182,8 @@ li a {
 }
 .articles {
   margin-top: 50px;
+  justify-self: center;
+  width: 95%;
 }
 
 /* footer */
@@ -233,40 +248,34 @@ footer {
     overflow-x: hidden;
   }
 
+  .hero {
+    height: 350px;
+  }
 
- .hero{
-  height: 70vh;
- }
- .container-hero-content{
-
-  height: 70vh;
-}
   .container-nav button {
     width: 15%;
   }
   .features {
     margin-top: 0;
   }
- .hero-text{
-  justify-content: center;
-  height: 70%;
-  
-}
-.hero-text button{
-  width: 50%;
-  height: 15%;
-
-}
-.hero-image img:nth-child(2){
-      width: 350px;
-    height: 490px;
-    position: absolute;
-     top: -100px; 
-     left:50%; 
-     transform: translateX(-50%);
-      
+  .hero-text {
+    justify-content: center;
+    height: 80%;
   }
-  
+
+  .hero-text button {
+    width: 50%;
+    height: 15%;
+  }
+  .hero-image img:nth-child(2) {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    top: -90px;
+    left: 55%;
+    transform: translateX(-55%);
+  }
+
   .feature-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -283,7 +292,7 @@ footer {
   .feature {
     margin-top: 0px;
   }
-  .features{
+  .features {
     margin-top: 120px;
   }
   .container-footer-content {
@@ -291,16 +300,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-   
   }
-
 }
 
 /* 
  mobile */
 
 @media (max-width: 680px) {
- 
   section {
     width: 100%;
   }
@@ -348,28 +354,29 @@ footer {
     justify-items: center;
     height: 30vh;
   }
- 
+
   .container-hero-content {
     display: grid;
-    
- 
   }
   .hero-text {
     order: 2;
     display: grid;
-    width: 100%;
+    width: 95%;
     align-self: center;
     justify-items: center;
     text-align: center;
     margin-top: 0;
     height: 100%;
   }
+  .typo {
+    height: 100%;
+  }
   .hero-text button {
-    width: 40%;
-      padding: 20px;
+    height: 34px;
+    width: 35%;
+    padding: 10px;
     font-size: 15px;
     text-align: center;
-  
   }
 
   .hero-image {
@@ -380,31 +387,26 @@ footer {
     position: relative;
     align-self: center;
     background-repeat: no-repeat;
-    background-size:cover;
-    overflow:hidden;
+    background-size: cover;
+    overflow: hidden;
     background-position: center;
     height: 45vh;
-    
-    
-
   }
-  .hero-image img:nth-child(2){
-      width: 350px;
+
+  .hero-image img:nth-child(2) {
+    width: 350px;
     height: 390px;
     position: absolute;
-     top: -100px; 
-     left:50%; 
-     transform: translateX(-50%);
-      
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-
-   
-  .hero-image img:nth-child(1){
+  .hero-image img:nth-child(1) {
     display: none;
   }
 
-/* 
+  /* 
   .hero-image img:nth-child(1) {
     width: 750px;
     height: 300px;
@@ -479,18 +481,15 @@ footer {
 
   .container-footer-content {
     display: grid;
-  justify-content: center;
-   
+    justify-content: center;
   }
-  .container-footer-content div{
-   justify-self: center;
+  .container-footer-content div {
+    justify-self: center;
   }
-
 }
 
 /* iphone 5 */
 @media (max-width: 320px) {
-
   .hero-image {
     background: url(../assets/icons/bg-intro-mobile.svg);
     margin-top: 0;
@@ -499,26 +498,23 @@ footer {
     position: relative;
     align-self: center;
     background-repeat: no-repeat;
-    background-size:cover;
-    overflow:hidden;
+    background-size: cover;
+    overflow: hidden;
     background-position: center;
     height: 50vh;
-
   }
-  .hero-image img:nth-child(2){
-      width: 250px;
+  .hero-image img:nth-child(2) {
+    width: 250px;
     height: 330px;
     position: absolute;
-     top: -100px; 
-     left:50%; 
-     transform: translateX(-50%);
-      
-  }
- 
-  .hero-image img:nth-child(1){
-    display: none;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
+  .hero-image img:nth-child(1) {
+    display: none;
+  }
 
   .navbar.active {
     height: 50vh;
@@ -536,9 +532,7 @@ footer {
     width: 80%;
   }
 
-  .hero-text button{
+  .hero-text button {
     width: 50%;
   }
-
-
 }
